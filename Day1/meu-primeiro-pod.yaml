@@ -1,16 +1,16 @@
-apiVersion: kind.x-k8s.io/v1alpha4
+apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx_giropops
+  name: nginx-giropops
   labels:
-    name: nginx_giropops
+    name: default
 spec:
   containers:
-  - name: nginx_giropops
+  - name: nginx-giropops
     image: nginx
     resources:
       limits:
         memory: "128Mi"
         cpu: "500m"
     ports:
-      - containerPort: <Port>
+      - containerPort: 80
