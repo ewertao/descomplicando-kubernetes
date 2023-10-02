@@ -1,7 +1,6 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  creationTimestamp: null
   labels:
     run: girus
   name: girus
@@ -11,7 +10,7 @@ spec:
     name: ubuntu-container
     args:
     - sleep
-    - "1000" 
+    - "1000"
     resources:
       limits:
         cpu: "0.5"
