@@ -4,6 +4,7 @@ metadata:
   labels:
     run: girus
   name: girus
+  namespace: dev
 spec:
   containers:
   - image: ubuntu

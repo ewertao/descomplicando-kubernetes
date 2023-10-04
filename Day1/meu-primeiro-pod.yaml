@@ -4,6 +4,7 @@ metadata:
   name: nginx-giropops
   labels:
     name: default
+  namespace: dev
 spec:
   containers:
   - name: nginx-giropops
@@ -13,4 +14,4 @@ spec:
         memory: "128Mi"
         cpu: "500m"
     ports:
-      - containerPort: 80
+    - containerPort: 80
